@@ -142,39 +142,42 @@
 }
 .cliDesign{
 margin:3%;
-height:80px;
-padding-top:20px;
+height:75px;
+padding-top:15px;
 border-radius:10px;
 box-shadow: 0 3px 10px gray;
 }
 .h2Cli{
     padding:0 5px;
     text-align:center;
-    color:black; font-size:16px;
+    color:black; 
+    font-size:16px;
 }
 /*  */
 .cloudHosting{
     background-color:#047AED;
-    height:390px;
+    height:300px;
     display:flex;
     padding:0 16.4%;
 }
 .cloudText{
-   width:58%;
-   margin-top:90px;
+   width:56%;
+   margin-top:50px;;
    height:177px;
 }
 .cloudImg{
-    margin-left:6%;
+    margin-left:4%;
     width:36%;
-    margin-top:50px;
+    margin-top:30px;
     height:260px;
 }
 .cloudImg img{
     width:100%;
 }
 .language{
-    display:flex;
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    grid-gap:10px;
     height:320px;
     margin:0 13.78%;
     padding:0 2.62%;
@@ -183,12 +186,11 @@ box-shadow: 0 3px 10px gray;
     margin-top:20px;
     border-radius:10px;
     box-shadow: 0px 5px 10px gray;
-    padding:20px;
     height:155px;
-    margin-right:2%;
+    padding:15px 5px 10px 5px;
     text-align:center!important;
     transition:margin-top 0.3s linear;
-   
+    
 }
  .languagedisplay:hover{
      margin-top:5px;
@@ -224,7 +226,7 @@ box-shadow: 0 3px 10px gray;
 }
 .iconbottom{
     font-size:30px;
-    margin-right:20px;
+    margin-right:10px;
 }
 @media (max-width:767px){
     .submitBtn{
@@ -269,42 +271,58 @@ box-shadow: 0 3px 10px gray;
         width:85%;
     }
     .color333{
-        font-size:20px;
+        font-size:16px;
+    }
+    .color1C3{
+      font-size:15px;
+    }
+    .cliSection{
+        border:1px solid green;
+        margin-bottom:20px;
     }
     .cliDesign{
-       font-size:12px;
+       font-size:10px;
        margin-left:0%;
        padding:0px;
-       height:75px;
+       height:70px;
+       padding:5px;
     }
     .cliText{
-        width:50%;
+        width:37%;
+        margin-left:0px;
+        border:1px solid red;
     }
     .cliImg{
-        width:56%;
+        width:62%;
     }
     .cliImg img{
         height:100px;
         width:100%;
     }
-    .cloudText h2{
-        font-size:18px!important;
-        width:200px;
-    }
-    .cloudText p{
-        font-size:12px!important;
-    }
-    .cloudImg{
-        margin-top:120px;
-        height:300px;
-        width:300px;
-    }
-    .language{
+    .cloudHosting{
         display:grid;
-        grid-template-columns: repeat(3,1fr);
-        margin-left:20px;
-        grid-gap:15px;      
-        margin-top: 0px !important;
+        grid-template-rows: repeat(2,1fr);
+        height:530px;
+    }
+
+    .cloudText{ 
+        width:100%;
+        margin-top:55px;
+        margin-bottom:30px;
+    }
+    .cloudText h2{
+        font-size: 30px !important;
+    }
+    
+    .cloudImg{
+        margin-top:30px;
+        width:100%;
+        text-align:center;
+    }
+    .cloudImg img{
+        height:220px;
+        width:350px;
+        margin:0 auto;
     }
     .h3Language{
         height:30px;
@@ -312,12 +330,12 @@ box-shadow: 0 3px 10px gray;
         padding-bottom:0px;
     }
     .supportedLanguage{
-        height:650px;
+        height:840px;
         display:block;
         text-align:center;
     }
     .iconbottom{
-        font-size:20px;
+        font-size:16px;
         margin-right:0px;
     }
     .link{
@@ -329,16 +347,51 @@ box-shadow: 0 3px 10px gray;
     .copyright p{
         font-size:14px;
     }
+    .iconStyle{
+        width: 25% !important;
+        height:20px;
+    }
 }
 @media (max-width:1000px){
-    .cloudText h2{
-        font-size:22px!important;
-    }
-    .cloudText p{
-        font-size:14px!important;
-    }
     .readBtn{
         width:100px;
+        height:40px;
+    }
+    .iconbottom{
+        font-size:28px;
+        margin-right:5px;
+    }   
+    .iconStyle{
+        width: 20% !important;
+        height:30px
     }
     
+}
+@media (max-width:1200px){
+    .language{
+           grid-template-columns: repeat(6,1fr)!important;
+    }
+}
+@media (max-width:1000px){
+    .language{
+           grid-template-columns: repeat(5,1fr)!important;
+    }
+}
+@media (max-width:768px){
+    .language{
+           grid-template-columns: repeat(3,1fr)!important;
+    }
+}
+
+
+
+@media (max-width:1200px){
+    .languagedisplay img{
+        height:50px;
+        border:1px solid green;
+    }
+    .h4{
+        font-size:14px;
+        margin:10px;
+    }
 }
