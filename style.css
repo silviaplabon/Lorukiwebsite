@@ -310,6 +310,7 @@ box-shadow: 0 3px 10px gray;
         display:grid;
         grid-template-rows: repeat(2,1fr);
         height:530px;
+        padding:0px!important;
     }
 
     .cloudText{ 
@@ -366,13 +367,10 @@ box-shadow: 0 3px 10px gray;
         margin-top:0px;
         height:120px;
     }
-
     .formBtn{
-        margin-top:5px;
-        margin-bottom:20px;
+        margin-top:5px!important;
+        margin-bottom:20px!important;
     }
-    .cloudHosting{
-        padding:0;    }
 }
 @media (max-width:1000px){
     .readBtn{
