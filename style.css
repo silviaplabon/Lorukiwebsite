@@ -205,11 +205,13 @@ box-shadow: 0 3px 10px gray;
 .h4{
     font-size:20px;
     padding:10px;
+    color:black;
 }
 .supportedLanguage{
     display:grid;
     grid-template-rows: repeat(1,fr);
     height: 325px;
+    color:black;
 }
 .h3Language{
     margin:0px auto;
@@ -335,9 +337,10 @@ box-shadow: 0 3px 10px gray;
         padding-bottom:0px;
     }
     .supportedLanguage{
-        height:840px;
+        height:550px!important;
         display:block;
         text-align:center;
+        border:1px solid greenyellow;
     }
     .iconbottom{
         font-size:16px;
@@ -361,10 +364,15 @@ box-shadow: 0 3px 10px gray;
     }
     .languagedisplay{
         margin-top:0px;
+        height:120px;
     }
+
     .formBtn{
-        padding-bottom:20px;
+        margin-top:5px;
+        margin-bottom:20px;
     }
+    .cloudHosting{
+        padding:0;    }
 }
 @media (max-width:1000px){
     .readBtn{
