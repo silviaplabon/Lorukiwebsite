@@ -362,6 +362,9 @@ box-shadow: 0 3px 10px gray;
     .languagedisplay{
         margin-top:0px;
     }
+    .formBtn{
+        padding-bottom:20px;
+    }
 }
 @media (max-width:1000px){
     .readBtn{
